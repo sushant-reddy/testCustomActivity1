@@ -32,7 +32,7 @@
         "retryCount": 1,
         "retryDelay": 1000,
         "concurrentRequests": 6,
-        "url": "https://example.com/execute",
+        "url": "https://testcustomactivity1.onrender.com/execute",
         "securityOptions": {
           "securityType": "securityContext",
           "securityContextKey": "EXTERNAL_KEY"
@@ -41,28 +41,28 @@
     },
     "configurationArguments": {
       "save": {
-        "url": "https://example.com/save",
+        "url": "https://testcustomactivity1.onrender.com/save",
         "securityOptions": {
           "securityType": "securityContext",
           "securityContextKey": "EXTERNAL_KEY"
         }
       },
       "publish": {
-        "url": "https://example.com/publish",
+        "url": "https://testcustomactivity1.onrender.com/publish",
         "securityOptions": {
           "securityType": "securityContext",
           "securityContextKey": "EXTERNAL_KEY"
         }
       },
       "validate": {
-        "url": "https://example.com/validate",
+        "url": "https://testcustomactivity1.onrender.com/validate",
         "securityOptions": {
           "securityType": "securityContext",
           "securityContextKey": "EXTERNAL_KEY"
         }
       },
       "stop": {
-        "url": "https://example.com/stop",
+        "url": "https://testcustomactivity1.onrender.com/stop",
         "securityOptions": {
           "securityType": "securityContext",
           "securityContextKey": "EXTERNAL_KEY"
