@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Custom DE Split Activity</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@salesforce-ux/design-system@2.17.5/assets/styles/salesforce-lightning-design-system.min.css" />
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var config = {
+                baseUrl: 'js'
+            };
+            var dependencies = ['customActivity'];
+            require(config, dependencies);
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="slds-scope">
+        <div class="slds-container_center slds-container_large">
+            <div id="step1" class="step slds-m-around_medium">
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="selectDataExtension">Select Data Extension</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select id="selectDataExtension" class="slds-select">
+                                <option value="">Choose a Data Extension...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="step2" class="step slds-m-around_medium slds-hide">
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label" for="selectField">Select Field</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select id="selectField" class="slds-select">
+                                <option value="">Choose a Field...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-form-element slds-m-top_medium">
+                    <label class="slds-form-element__label" for="selectCondition">Select Condition</label>
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select id="selectCondition" class="slds-select">
+                                <option value="">Choose a Condition...</option>
+                                <option value="equals">Equals</option>
+                                <option value="notEquals">Not Equals</option>
+                                <option value="contains">Contains</option>
+                                <option value="notContains">Does Not Contain</option>
+                                <option value="greaterThan">Greater Than</option>
+                                <option value="lessThan">Less Than</option>
+                                <option value="isNull">Is Null</option>
+                                <option value="isNotNull">Is Not Null</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-form-element slds-m-top_medium">
+                    <label class="slds-form-element__label" for="inputValue">Enter Value</label>
+                    <div class="slds-form-element__control">
+                        <input type="text" id="inputValue" class="slds-input" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

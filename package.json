@@ -1,0 +1,21 @@
+{
+  "name": "sfmc-custom-journey-activity",
+  "version": "1.0.0",
+  "description": "Custom Journey Builder activity for Salesforce Marketing Cloud",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
